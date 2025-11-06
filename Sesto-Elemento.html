@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lamborghini Sesto Elemento</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #1b1b1b, #2c2c2c 25%, #3b0000 75%, #660000);
+      background-attachment: fixed;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      width: 80%;
+      height: 100px;
+      border: 3px solid #a10000;
+      background: linear-gradient(90deg, #111, #2c2c2c);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8em;
+      letter-spacing: 2px;
+      font-weight: bold;
+      text-transform: uppercase;
+      box-shadow: 0 0 20px #a10000;
+      gap: 15px; 
+    }
+
+    header img {
+      width: 80px;
+      height: auto;
+      filter: drop-shadow(0 0 8px #a10000);
+    }
+
+    header .titulo {
+      color: #ff0000; 
+    }
+
+    main {
+      display: flex;
+      width: 80%;
+      margin-top: 20px;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .contenido {
+      width: 65%;
+      border: 2px solid #a10000;
+      background-color: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(5px);
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(161, 0, 0, 0.6);
+    }
+
+    .contenido img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    aside {
+      width: 30%;
+      border: 2px solid #a10000;
+      background-color: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(5px);
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(161, 0, 0, 0.6);
+    }
+
+    aside img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: #ff4d4d;
+      margin-bottom: 10px;
+      text-shadow: 0 0 10px rgba(255, 77, 77, 0.6);
+    }
+
+    p {
+      line-height: 1.6;
+      color: #f0f0f0;
+      text-align: justify;
+    }
+
+    button {
+      background-color: #a10000;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 8px;
+      margin-top: 10px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #cc0000;
+    }
+
+    area {
+      cursor: pointer;
+    }
+
+    audio {
+      width: 100%;
+      margin-top: 10px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/453a9193-2bca-46f1-9e90-4d23eb744ab5/d79f24b-41fd643e-3486-4362-a027-eef322f2cc4a.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi80NTNhOTE5My0yYmNhLTQ2ZjEtOWU5MC00ZDIzZWI3NDRhYjUvZDc5ZjI0Yi00MWZkNjQzZS0zNDg2LTQzNjItYTAyNy1lZWYzMjJmMmNjNGEucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.GLpCr0UDzyk7CsnlrQMqRlx3MjTwGvsmbQL5zmiXkQA" alt="Logo Lamborghini">
+    <span class="titulo">Lamborghini Sesto Elemento</span>
+  </header>
+
+  <main>
+    <div class="contenido">
+      <img id="imagenPrincipal" 
+           src="https://i.blogs.es/6a576c/lamborghini-sesto-elemento-concept/450_1000.jpg" 
+           alt="Lamborghini Sesto Elemento"
+           usemap="#mapaAuto">
+
+      <map name="mapaAuto">
+        <area shape="rect" coords="270,150,440,250" alt="Motor" id="zonaMotor">
+        <area shape="rect" coords="60,100,200,200" alt="Interior" id="zonaInterior">
+      </map>
+
+      <h2>Descripción</h2>
+      <p>
+        El Lamborghini Sesto Elemento es uno de los superdeportivos más exclusivos y ligeros creados por la marca italiana.
+        Su nombre, que significa "sexto elemento" en italiano, hace referencia al carbono, el material principal con el que está construido.
+      </p>
+      <p>
+        Gracias a su chasis y carrocería hechos casi completamente de fibra de carbono, el Sesto Elemento pesa apenas 999 kg.
+        Está impulsado por un motor V10 de 5.2 litros con 570 caballos de fuerza, el mismo que el del Gallardo Superleggera.
+        Puede acelerar de 0 a 100 km/h en tan solo 2.5 segundos, demostrando su potencia y ligereza extrema.
+      </p>
+    </div>
+
+    <aside id="galeria">
+      <h2 id="tituloGaleria">Galería</h2>
+      <img id="imagenGaleria" 
+           src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/masterpieces/sesto-elemento/refresh/sesto_elemento_over_rev_01.jpg" 
+           alt="Sesto Elemento lateral">
+      <p id="descripcionGaleria">
+        Solo se produjeron 20 unidades del Sesto Elemento, y todas fueron destinadas a pista, sin homologación para circular en la vía pública.
+      </p>
+      <button id="btnPrueba">Prueba de Conocimiento</button>
+      <div id="resultadoPrueba"></div>
+
+      
+      <div id="audioMotor"></div>
+
+      <button id="btnRegresar" style="display:none;">Regresar a Galería</button>
+    </aside>
+  </main>
+
+  <script>
+    const zonaMotor = document.getElementById("zonaMotor");
+    const zonaInterior = document.getElementById("zonaInterior");
+    const tituloGaleria = document.getElementById("tituloGaleria");
+    const imagenGaleria = document.getElementById("imagenGaleria");
+    const descripcionGaleria = document.getElementById("descripcionGaleria");
+    const btnRegresar = document.getElementById("btnRegresar");
+    const audioMotor = document.getElementById("audioMotor");
+
+    function mostrarGaleriaOriginal() {
+      tituloGaleria.textContent = "Galería";
+      imagenGaleria.src = "https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/masterpieces/sesto-elemento/refresh/sesto_elemento_over_rev_01.jpg";
+      imagenGaleria.alt = "Sesto Elemento lateral";
+      descripcionGaleria.textContent =
+        "Solo se produjeron 20 unidades del Sesto Elemento, y todas fueron destinadas a pista, sin homologación para circular en la vía pública.";
+      audioMotor.innerHTML = "";
+      btnRegresar.style.display = "none";
+    }
+
+    zonaMotor.addEventListener("click", () => {
+      tituloGaleria.textContent = "Motor";
+      imagenGaleria.src = "https://pm1.aminoapps.com/6848/ee6d4506840534c969906f934501cf96d86ed809v2_hq.jpg";
+      imagenGaleria.alt = "Motor Sesto Elemento";
+      descripcionGaleria.textContent =
+        "El Sesto Elemento utiliza un motor V10 de 5.2 litros con 570 caballos de fuerza. Su estructura ligera de fibra de carbono permite una aceleración brutal de 0 a 100 km/h en apenas 2.5 segundos.";
+
+      audioMotor.innerHTML = `
+        <audio controls>
+          <source src="sound.mp3" type="audio/mp3">
+          Tu navegador no soporta el elemento de audio.
+        </audio>
+      `;
+
+      btnRegresar.style.display = "block";
+    });
+
+    zonaInterior.addEventListener("click", () => {
+      tituloGaleria.textContent = "Interior";
+      imagenGaleria.src = "https://external-preview.redd.it/K7HpgJ0Iz6lFd4QP2oZLKScqClqde5dICxKo4CF57Ew.jpg?width=1080&crop=smart&auto=webp&s=84e5d2e22f12ae188729ab943061e48c4c0ca723";
+      imagenGaleria.alt = "Interior Sesto Elemento";
+      descripcionGaleria.textContent =
+        "El interior del Sesto Elemento es completamente minimalista, diseñado para reducir peso. No tiene tapicería tradicional: el chasis de fibra de carbono forma parte de los asientos, y los controles están orientados al conductor para una experiencia pura de manejo.";
+      audioMotor.innerHTML = "";
+      btnRegresar.style.display = "block";
+    });
+
+    btnRegresar.addEventListener("click", mostrarGaleriaOriginal);
+
+    const preguntas = [
+      { q: "¿Qué significa 'Sesto Elemento'?", a: "Carbono" },
+      { q: "¿Cuántos caballos de fuerza tiene el motor del Sesto Elemento?", a: "570" },
+      { q: "¿De qué material está hecho principalmente el chasis?", a: "Fibra de carbono" },
+      { q: "¿Cuántas unidades del Sesto Elemento se produjeron?", a: "20" },
+      { q: "¿Cuál es el tiempo de aceleración de 0 a 100 km/h?", a: "2.5" },
+      { q: "¿Qué tipo de motor utiliza?", a: "V10" },
+      { q: "¿En qué país se fabrica Lamborghini?", a: "Italia" },
+      { q: "¿Está homologado para circular en la vía pública?", a: "No" },
+      { q: "¿Qué modelo comparte motor con el Sesto Elemento?", a: "Gallardo" },
+      { q: "¿Qué peso aproximado tiene el vehículo (kg)?", a: "999" }
+    ];
+
+    function iniciarPrueba() {
+      alert("Bienvenido a la Prueba de Conocimiento sobre el Lamborghini Sesto Elemento. Contesta 10 preguntas. ¡Suerte!");
+      let puntaje = 0;
+
+      for (let i = 0; i < preguntas.length; i++) {
+        let respuesta = prompt(`Pregunta ${i + 1}:\n${preguntas[i].q}`);
+        if (!respuesta) respuesta = "";
+        if (respuesta.trim().toLowerCase() === preguntas[i].a.toLowerCase()) {
+          alert("✅ ¡Correcto!");
+          puntaje++;
+        } else {
+          alert(`❌ Incorrecto. Respuesta correcta: ${preguntas[i].a}`);
+        }
+      }
+
+      resultadoPrueba.innerHTML = `
+        <h3>Tu calificación final es: ${puntaje}/10</h3>
+        <button onclick="iniciarPrueba()">Reintentar</button>
+      `;
+    }
+
+    btnPrueba.addEventListener("click", iniciarPrueba);
+
+  </script>
+
+
+</body>
+</html>
