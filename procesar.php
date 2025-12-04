@@ -10,7 +10,7 @@
         $comentario_post = $_POST['campoComentario'];
 
         $conexion = mysqli_connect(
-            "sql210.infinityfree.com",
+            "sql302.infinityfree.com",
             "if0_40590838",
             "HlvzCtJMQVUrC",
             "if0_40590838_interactivo"
