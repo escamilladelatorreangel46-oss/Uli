@@ -76,7 +76,7 @@
 <body>
 
     <?php
-     $conexion= mysqli_connect("sql210.infinityfree.com","if0_40590838","HlvzCtJMQVUrC","if0_40590838_interactivo");
+     $conexion= mysqli_connect("sql302.infinityfree.com","if0_40475251","I0aY6dMM02MfjKf","if0_40475251_naqueto");
 
     if(!$conexion){
         echo "Error: Nose pudo conectar a MySQL.";
