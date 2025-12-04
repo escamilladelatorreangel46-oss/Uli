@@ -176,7 +176,7 @@
       padding: 15px 30px;
       font-weight: bold;
       color: white;
-      background-color: #e10600;
+      background-color: #630704;
       border-radius: 12px;
       text-decoration: none;
       display: flex;
@@ -186,7 +186,7 @@
     }
 
     .boton-formulario:hover {
-      background-color: #ff1a1a;
+      background-color: #640808;
       transform: scale(1.05);
     }
 
@@ -235,18 +235,15 @@
 
     <a id="instrucciones"><img width="100px" src="images/regresar.png" /></a>
 
-    <!-- CAMBIADO: ahora es un botón -->
-    <button id="btnCuestionario" class="boton-formulario">Hacer Cuestionario</button>
+   <button id="btnCuestionario" class="boton-formulario">Hacer Cuestionario</button>
 
     <a href="formulario.html" class="boton-formulario">Ir al Formulario</a>
 
-    <!-- CAMBIADO: ya NO manda a formulario.html -->
     <a href="#" class="boton-formulario">Libro de visitas</a>
 
   </div>
 
 <script>
-/* ------------ Hotspots ------------ */
 document.getElementById('hotspot1').onclick = function() {
   document.getElementById('titulo-info').textContent = 'Motor';
   document.getElementById('texto-info').textContent =
@@ -254,9 +251,6 @@ document.getElementById('hotspot1').onclick = function() {
   document.getElementById('imagen-info').src = 'images/450sr-motor.png';
 };
 
-/* ... Los demás hotspots igual que antes ... */
-
-/* ------------ Cuestionario ------------ */
 const preguntas = [
   { pregunta: "¿De cuántos cilindros es el motor de la 450SR?", respuesta: "dos" },
   { pregunta: "¿Cuál es la cilindrada aproximada de la 450SR?", respuesta: "450" },
