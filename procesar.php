@@ -18,7 +18,7 @@
 
         if (!$conexion) {
             echo "Error: no se pudo conectar a MySQL<br>";
-            echo "errno: " . mysqli_connect_errno() . "<br>";
+            echo "error: " . mysqli_connect_errno() . "<br>";
             echo "error: " . mysqli_connect_error();
             exit;
         }
